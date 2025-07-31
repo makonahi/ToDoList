@@ -1,13 +1,12 @@
-package makonahi.ToDoList.entity;
+package makonahi.ToDoList.model;
 
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Entity
 @Table(name = "tasks")
-public class TaskEntity {
+public class Task {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -121,4 +120,19 @@ public class TaskEntity {
         this.userID = userID;
     }
 
+    @Override
+    public String toString() {
+        return "TaskEntity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", priority=" + priority +
+                ", creationDate=" + creationDate +
+                ", deadlineDate=" + deadlineDate +
+                ", completed=" + completed +
+                ", completionDate=" + completionDate +
+                ", comments='" + comments + '\'' +
+                ", userID=" + userID +
+                '}';
+    }
 }

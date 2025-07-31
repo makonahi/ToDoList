@@ -1,12 +1,10 @@
-package makonahi.ToDoList.entity;
+package makonahi.ToDoList.model;
 
 import jakarta.persistence.*;
 
-import java.util.UUID;
-
 @Entity
 @Table(name = "users")
-public class UserEntity {
+public class Users {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
