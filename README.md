@@ -1,4 +1,4 @@
-This is a ready backend part for a web app of to-do list. Includes creating new tasks, updating existing ones, deleting and simply getting your tasks (all CRUD operations). The application includes basic authentication — users must log in to manage their tasks. Accordingly, it also provides a feature to register a new account. Users passwords are secured via BCryptEncoder.
+TThis is a fully functional backend for a to-do list web application. It supports all standard CRUD operations — creating, reading, updating, and deleting tasks. The system includes basic authentication, requiring users to log in to access and manage their tasks. A registration feature is also available for creating new user accounts. To ensure security, user passwords are encrypted using BCrypt.
 
 Database Structure:
 ToDoList
